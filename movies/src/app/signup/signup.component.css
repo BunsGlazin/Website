@@ -1,0 +1,50 @@
+.signupcontainer {
+    height: 100%;
+    width: 100%;
+    background-image: url("moiv.jpg");
+    
+}
+
+.sign {
+    position: absolute;
+    width: 80%;
+    height: 40%;
+    left: 10%;
+    top: 30%;
+    background-color:rgba(0, 0, 0, 0.5);
+    color: white;
+    font-weight: bold;
+    font-size: 140%;
+}
+
+.signuptext {
+    position: absolute;
+    top: 7%;
+    left: 9%;
+}
+
+.fnplace {
+    color: gray;
+    background-color: rgb(65, 64, 64);
+}
+
+::ng-deep .fnfield {
+    position: absolute;
+    top: 20%;
+    background-color: rgb(65, 64, 64);
+    border-radius: 5%;
+    height: 56px;
+    border: none !important;
+    width: 85%;
+    border: none  !important;
+}
+
+.passfield {
+    top: 50%;
+}
+
+.signin {
+    position: absolute;
+    top: 75%;
+    left: 60%;
+}

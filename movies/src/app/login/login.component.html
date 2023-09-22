@@ -1,0 +1,39 @@
+<div class="mobilebacker" *ngIf="fulldisplay">
+  <div class="container log">
+    <span class="logintext">
+      Login
+    </span>
+    <mat-form-field class="loginfield" appearance="outline">
+      <mat-label class="userplace">Enter Username</mat-label>
+      <input matInput type="text" class="username" [(ngModel)]="activeEmp.empId">
+      <button *ngIf="activeEmp.empId" matSuffix mat-icon-button aria-label="Clear" (click)="activeEmp.empId=''">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+    <div class="invaliduser" *ngIf="userValid">
+      Username is Invalid
+    </div>
+
+    <mat-form-field appearance="outline" class="passfield">
+      <mat-label class="userplace">Enter your password</mat-label>
+      <input matInput [type]="hide ? 'password' : 'text'" class="password" [(ngModel)]="activeEmp.password">
+      <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+        [attr.aria-pressed]="hide">
+        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+      </button>
+    </mat-form-field>
+    <div class="invalidpass" *ngIf="passValid">
+      Password is Incorrect
+    </div>
+
+    <div class="signuptext">
+      No Account?
+      <input type="submit" routerLink="/signup-component" routerLinkActive="active"
+      ariaCurrentWhenActive="page" class="signup" value="Sign Up now.">
+    </div>
+
+    
+    <button mat-raised-button color="primary" class="signin" (click)="checkemp()" *ngIf="activeEmp.password && activeEmp.empId">Sign In</button>
+  </div>
+
+</div>

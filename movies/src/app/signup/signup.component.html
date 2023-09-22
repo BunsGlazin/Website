@@ -1,0 +1,28 @@
+<div class="signupcontainer">
+  <div class="container sign">
+    <span class="signuptext">
+      Get Started
+    </span>
+
+    <mat-form-field class="fnfield" appearance="outline">
+      <mat-label class="fnplace">First Name</mat-label>
+      <input matInput type="text" class="username" [(ngModel)]="activeEntity.empName">
+      <button *ngIf="activeEntity.empName" matSuffix mat-icon-button aria-label="Clear"
+        (click)="activeEntity.empName=''">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+
+    <mat-form-field class="passfield fnfield" appearance="outline">
+      <mat-label class="fnplace">Enter password</mat-label>
+      <input matInput type="text" class="username" [(ngModel)]="activeEntity.password">
+      <button *ngIf="activeEntity.password" matSuffix mat-icon-button aria-label="Clear"
+        (click)="activeEntity.password=''">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" (click)="postemp()" class="signin" routerLink="/" routerLinkActive="active"
+    ariaCurrentWhenActive="page">Sign Up</button>
+  </div>
+</div>

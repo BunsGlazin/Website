@@ -1,0 +1,43 @@
+
+.log {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    border: none;
+    width: 80%;
+    height: 50%;
+    padding: 7%;
+    font-size: 10px;
+    background-color:rgba(0, 0, 0, 0.5);
+    color: white;
+    
+}
+
+.welcometext {
+    position: absolute;
+    left: 32%;
+    color: white;
+    font-size: 26px !important;
+    font-weight: BOLD;
+}
+
+.loginbutton {
+    position: absolute;
+    left: 37%;
+    top: 30%;
+}
+.signupbutton {
+    top: 50% !important;
+    left: 36%;
+}
+
+.loginbuttontext {
+    position: absolute;
+    top: 23%;
+    left: 30%;
+}
+
+.littlebottom {
+    top: 43%;
+    left: 33%;
+}

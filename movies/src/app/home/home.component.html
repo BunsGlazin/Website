@@ -1,0 +1,18 @@
+<div class="mobileback" >
+    <div class="container log" *ngIf="whole">
+      <div class="welcometext">
+        Welcome
+      </div>
+      <span class="loginbuttontext">
+        Already have an account?
+      </span>
+      <button mat-raised-button class="loginbutton" routerLink="/login-component" routerLinkActive="active"
+      ariaCurrentWhenActive="page" >Log In</button>
+      
+      <span class="loginbuttontext littlebottom">
+        Dont have an account?
+      </span>
+      <button mat-raised-button class="signupbutton loginbutton" routerLink="/signup-component" routerLinkActive="active"
+      ariaCurrentWhenActive="page" >Sign up</button>
+    </div>
+</div>
